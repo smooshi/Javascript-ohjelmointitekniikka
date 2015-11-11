@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
     <head>
         <title>Viikko 2</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
     </head>
     <body>
         <div>
@@ -12,7 +14,48 @@
             </header>
             <section>
                 <h1>Viikko 2: Hyviä ohjelmointikäytäntöjä – tyyppiturvallisuuden tavoittelua</h1>
+                <p> Javaskriptin datatyypit ovat:
+                <ul>
+                    <li>String</li>
+                    <li>Numero</li>
+                    <li>Boolean</li>
+                    <li>Objekti</li>
+                    <li>Funktio</li>
+                </ul>
+                <p> Lisäksi on datatyypit, jotka eivät voi sisältää arvoja:</p>
+                <ul>
+                    <li>null</li>
+                    <li>undefined</li>
+                </ul>
+                
+                <p>Objekteja on:</p>
+                <ul>
+                    <li>Objekti</li>
+                    <li>Päivämäärä</li>
+                    <li>Array</li>
+                </ul>
+                
+          
+            </section>
+            <section>
+                <h2>Onko objekti numero: </h2>
+                <p>function isNumber(obj) { return !isNaN(parseFloat(obj)) }</p>
+                
+            </section>
+            <section>
+                <h2>Onko objekti array?</h2>
+                <p><function isArray(myArray) {</p>
+                <p>return myArray.constructor.toString().indexOf("Array") > -1;</p>
+                <p>}</p>
+            </section>
+            <section>
+                <h2>Onko objekti päivämäärä?</h2>
+                <p>function isDate(myDate) {
+    return myDate.constructor.toString().indexOf("Date") > -1;
+}
+                <p>
             </section>
         </div>
+        <script src="code.js"></script>
     </body>
 </html>
